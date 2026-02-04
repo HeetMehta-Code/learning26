@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+    <h1>about us page</h1>
+    <head><title>Demo</title></head>
+    <body>
+        <h2>TeamName: {{tname}}</h2>
+        <h2>Cap: {{cap}}</h2>
+        <h2>Trophy: {{tro}}</h2>
+
+        <h1>----------------------------</h1>
+          {% if tro > 5 %}
+          <h1>Strong team</h1>
+            {% else %}
+            <h1>Positive team</h1>
+            {% endif %}
+    </body>
+</html>
