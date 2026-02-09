@@ -1,8 +1,14 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 
-def test(request):
-    return HttpResponse("Jay Shree Ram")
+def test1(request):
+    return HttpResponse("StudentName: Paurav Patel")
+
+def test2(request):
+    return HttpResponse("Age: 28")
+
+def test3(request):
+    return HttpResponse("Profile: Business")
 
 def contact(request):
     return render(request,"contact.html")
