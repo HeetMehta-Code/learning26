@@ -1,5 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import render
+from .models import User
 
 def test1(request):
     return HttpResponse("StudentName: Paurav Patel")
@@ -19,3 +20,8 @@ def home(request):
 def aboutUs(request):
     data = {"tname":"RCB","cap":"Rajat Patidar","tro":1} 
     return render(request,"about.html",data)
+
+def stu(request):
+    cus = User.objects.all().values()
+    print(cus)
+    return HttpResponse("User data printed in terminal")
