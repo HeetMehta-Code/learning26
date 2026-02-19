@@ -1,0 +1,8 @@
+<h1>CRETAE EMPLOYEEFORM</h1>
+
+<h3><a href="{% url 'employeeList' %}">Employee List</a></h3>
+<br><br>
+<form method="POST">
+  {% csrf_token %} {{form}}
+  <input type="submit" value="Submit" />
+</form>
