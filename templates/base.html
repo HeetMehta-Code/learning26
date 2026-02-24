@@ -1,0 +1,15 @@
+{% load static %}
+<html>
+  <head>
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+  </head>
+  <body>
+    {% include 'header.html' %}
+    
+    <div class="content">{% block content %} {% endblock content %}</div>
+
+    {% include 'footer.html' %}
+    <div class="cactus"></div>
+    <div class="camel"></div>
+  </body>
+</html>

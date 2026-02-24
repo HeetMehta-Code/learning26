@@ -1,3 +1,5 @@
+{% extends 'base.html' %}
+{% block content %}
 <h1>EMPLOYEE LIST</h1>
 
 <h3><a href="{% url 'createEmployee'%}">CREATE EMPLOYEE<a/></h3>
@@ -34,3 +36,4 @@
         {% endfor %}
     </tbody>
 </table>
+{% endblock content %}
